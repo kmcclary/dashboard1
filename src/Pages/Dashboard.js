@@ -3,29 +3,29 @@ import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import awsconfig from '../aws-exports'
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-//import { listTodos } from '../graphql/queries';
-//import { useState, useEffect } from 'react';
+import { listSurveyDatas } from '../graphql/queries';
+import { useState, useEffect } from 'react';
 
 Amplify.configure(awsconfig);
 
 function Dashboard() {
 
-    // const [data, setData] = useState([])
+    const [data, setData] = useState([])
 
-    // useEffect(() => {
-    //     fetchdata()
-    // }, []);
+    useEffect(() => {
+        fetchdata()
+    }, []);
 
-    // const fetchdata = async () => {
-    //     try {
-    //         const foundData = await API.graphql(graphqlOperation(listTodos))
-    //         const dataList = foundData.data.listTodos.items;
-    //         console.log('data list', dataList)
-    //     }
-    //     catch (error) {
-    //         console.log('error fetchting', error)
-    //     }
-    // }
+    const fetchdata = async () => {
+        try {
+            const foundData = await API.graphql(graphqlOperation(listSurveyDatas))
+            const dataList = foundData.data.listSurveyDatas.items;
+            console.log('data list', dataList)
+        }
+        catch (error) {
+            console.log('error fetchting', error)
+        }
+    }
 
 
 

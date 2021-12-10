@@ -6,3 +6,11 @@ Amplify configure
 Amplify init
     Project name: datadashboard
     Environment name: datadev
+
+Amplify add Auth
+    User: dashboardamplify
+
+Amplify add API
+    API name: dataAPI
+    Authorization type: Amazon Cognito User Pool
+    Schema template: single-object with fields

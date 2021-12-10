@@ -1,0 +1,8 @@
+Amplify configure
+    region: us-east-1
+    user name: dashboardamplify
+    local AWS profile name: dashboardamplifylocal
+
+Amplify init
+    Project name: datadashboard
+    Environment name: datadev

@@ -1,0 +1,20 @@
+{
+  "datadev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-datadashboard-datadev-91938-authRole",
+      "UnauthRoleArn": "arn:aws:iam::858821991613:role/amplify-datadashboard-datadev-91938-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::858821991613:role/amplify-datadashboard-datadev-91938-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-datadashboard-datadev-91938-deployment",
+      "UnauthRoleName": "amplify-datadashboard-datadev-91938-unauthRole",
+      "StackName": "amplify-datadashboard-datadev-91938",
+      "StackId": "arn:aws:cloudformation:us-east-1:858821991613:stack/amplify-datadashboard-datadev-91938/5cffdf80-59dd-11ec-a31e-121d78e7ed09",
+      "AmplifyAppId": "d27zj7uh8jmp4w"
+    },
+    "categories": {
+      "auth": {
+        "datadashboard21e23ce0": {}
+      }
+    }
+  }
+}
